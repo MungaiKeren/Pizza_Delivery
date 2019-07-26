@@ -1,7 +1,21 @@
+body{
+    scroll-behavior: smooth;
+}
 .landing-page{
-    background-image: url('https://github.com/MungaiKeren/Pizza_Delivery/blob/master/pizza%20LP3.jpg?raw=true');
+    background-image: url('../Pizza-delivery/Images/pizza\ LP3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 30%;
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 700px;
+    padding: 10%;
+}
+h1,span#white{
+    color: white;
+    font-family: 'Jacques Francois Shadow', cursive;
+    /* margin-left: 15%; */
+    
+}
+p{
+    font-size: 30px;
 }
