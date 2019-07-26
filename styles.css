@@ -1,6 +1,7 @@
 .landing-page{
-    background-image: url('');
+    background-image: url('https://github.com/MungaiKeren/Pizza_Delivery/blob/master/pizza%20LP3.jpg?raw=true');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding: 30%;
 }
