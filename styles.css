@@ -5,17 +5,23 @@ body{
     background-image: url('../Pizza-delivery/Images/pizza\ LP3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed; 
     width: 100%;
     height: 700px;
     padding: 10%;
 }
-h1,span#white{
+h1#white,span#white{
     color: white;
-    font-family: 'Jacques Francois Shadow', cursive;
-    /* margin-left: 15%; */
-    
+    font-family: 'Jacques Francois Shadow', cursive;   
+    box-shadow: 2px 2px 5px blueviolet;
 }
-p{
+p#white{
     font-size: 30px;
+}
+li{
+    list-style: none;
+}
+.container-fluid{
+    text-align: center;
+    padding: 3%;
 }
