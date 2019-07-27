@@ -25,7 +25,20 @@ li{
     text-align: center;
     padding: 3%;
 }
-#toppings{
-    margin-left: 50%;
-    margin-bottom: 15%; 
+button#order{
+    text-align: center;
+}
+.delivery{
+    text-align: center;
+    display: none;
+}
+.location{
+    display: none;
+}
+p#p{
+    margin-left: 20%;
+}
+form#place{
+    width: 50%;
+    margin-left: 20%;
 }

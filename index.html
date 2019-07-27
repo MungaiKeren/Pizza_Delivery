@@ -19,7 +19,7 @@
                 <h1 id="white">Pizzeria Hunt</h1>
                 <p id="white"><span id="white">Welcome to the world of pizza!<br>Pizzeria Hunt is the best Pizza shop in town!
                 <br>You don't wanna miss a bite!</span></p><br><br><br>
-                <a href="#form"><button class="bg-primary">Order now!</button></a>
+                <a href="#form"><button class="btn btn-primary">Order now!</button></a>
             </div>
         </div>
     </div>
@@ -60,15 +60,15 @@
     </div>
     
     <div class="container">
-    <div class="overlay">
+    
         <div class="row">
             <div class="col-md-4">
         <h4>Select your pizza of choice!</h4>
         <form id="form">
             <select name="size" class="form-control">
-                <option value="600">Large</option>
-                <option value="400">Medium</option>
-                <option value="300">Small</option>
+                <option value="1000">Large</option>
+                <option value="800">Medium</option>
+                <option value="500">Small</option>
             </select>
         </form>
     </div>
@@ -80,14 +80,15 @@
                 <option value="200">Stuffed</option>
                 <option value="300">Glutten free</option>
             </select>
+        </div>
         </form>
-    </div>
+    
     <div class="col-md-4">
         <h4>Select your Toppings of choice!</h4>
         <form id="form">
             <div class="row">
                 <div class="col-md-6">
-            <input type="checkbox" class="form control">Pepperoni<br>
+            <input type="checkbox" class="form control" value="100">Pepperoni<br>
             <input type="checkbox" class="form control">Onions<br>
             <input type="checkbox" class="form control">sausage<br>
             <input type="checkbox" class="form control">Bacon<br>
@@ -99,10 +100,24 @@
             <input type="checkbox" class="form control">Olive<br>
         </div>
     </div>
+    <button type="submit" class="btn btn-secondary" id="order">Order</button>
         </form>
     </div>
     </div>
     </div>
+    <div class="delivery">
+        <p>Do you wish for you pizza to be delivered for 200 Kshs?</p>
+        <button class="text-center btn btn-primary" id="deliver">Yes</button>
+    </div>
+        <div class="location">
+        <p id="p">Please enter your delivery location.</p>
+        <form id="place">
+            <label>Location/Building</label><br>
+            <input type="text" class="form-control" id="buiding">
+            <label>House/Office number</label><br>
+            <input type="number" class="form-control" id="office"><br>
+            <button type="submit" class="btn bg-secondary">Deliver</button>
+        </form>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js"
