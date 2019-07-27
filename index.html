@@ -18,7 +18,8 @@
             <div class="col-md-6">
                 <h1 id="white">Pizzeria Hunt</h1>
                 <p id="white"><span id="white">Welcome to the world of pizza!<br>Pizzeria Hunt is the best Pizza shop in town!
-                <br>You don't wanna miss a bite!</span></p>
+                <br>You don't wanna miss a bite!</span></p><br><br><br>
+                <a href="#form"><button class="bg-primary">Order now!</button></a>
             </div>
         </div>
     </div>
@@ -44,7 +45,7 @@
         </ol>
     </div>
     <div class="container">
-        <h1 class="text-center">Gallery</h1>
+        <h1 class="text-center">Menu</h1>
         <div class="row">
             <div class="col-md-4">
                 <img src="../Pizza-delivery/Images/pizza-small2.jpg" width="300px" height="200px">
@@ -56,32 +57,51 @@
             <img src="../Pizza-delivery/Images/pizza LP1.jpg" width="300px" height="200px">
         </div>
         </div><br><br>
-        <!-- make a corusel for the images above-->
-        <!-- <div class="row">
-            <div class="col-md-4">
-                <img src="../Pizza-delivery/Images/pizza 1.1.jpeg" width="300px" height="200px">
-            </div>
-            <div class="col-md-4">
-                <img src="../Pizza-delivery/Images/">
-            </div>
-            <div class="col-md-4"></div>
-        </div> -->
     </div>
-    <button class="bg-success">Order now!</button>
+    
     <div class="container">
     <div class="overlay">
+        <div class="row">
+            <div class="col-md-4">
         <h4>Select your pizza of choice!</h4>
-        <form class="form-inline">
-            <div class="form-group">
-                <label for="size">Pizza Size</label>
-                <input list="sizes" name="size">
-                <datalist id="">
-                    <option value="Large"></option>
-                    <option value="Medium"></option>
-                    <option value="Small"></option>
-                </datalist>
-            </div>
+        <form id="form">
+            <select name="size" class="form-control">
+                <option value="600">Large</option>
+                <option value="400">Medium</option>
+                <option value="300">Small</option>
+            </select>
         </form>
+    </div>
+    <div class="col-md-4">
+        <h4>Select your pizza crust!</h4>
+        <form id="form">
+            <select name="Crust" class="form-control">
+                <option value="100">Crispy</option>
+                <option value="200">Stuffed</option>
+                <option value="300">Glutten free</option>
+            </select>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <h4>Select your Toppings of choice!</h4>
+        <form id="form">
+            <div class="row">
+                <div class="col-md-6">
+            <input type="checkbox" class="form control">Pepperoni<br>
+            <input type="checkbox" class="form control">Onions<br>
+            <input type="checkbox" class="form control">sausage<br>
+            <input type="checkbox" class="form control">Bacon<br>
+        </div>
+            <div class="col-md-6">
+            <input type="checkbox" class="form control">Cheese<br>
+            <input type="checkbox" class="form control">Bell Pepper<br>
+            <input type="checkbox" class="form control">Mushrooms<br>
+            <input type="checkbox" class="form control">Olive<br>
+        </div>
+    </div>
+        </form>
+    </div>
+    </div>
     </div>
     </div>
 </body>
