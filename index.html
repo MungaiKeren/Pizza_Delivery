@@ -68,10 +68,27 @@
         </div> -->
     </div>
     <button class="bg-success">Order now!</button>
-
+    <div class="container">
+    <div class="overlay">
+        <h4>Select your pizza of choice!</h4>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="size">Pizza Size</label>
+                <input list="sizes" name="size">
+                <datalist id="">
+                    <option value="Large"></option>
+                    <option value="Medium"></option>
+                    <option value="Small"></option>
+                </datalist>
+            </div>
+        </form>
+    </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
 </html>
