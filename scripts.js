@@ -20,32 +20,12 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('form#place').submit(function(){
-        var location = $('input#building').val();
-        var houseno = $('input#office').val();
+        var building = $('input#building').val();
+        var office = $('input#office').val();
         if ($('input#building').val() && $('input#office').val() !== ""){
-            alert("Your pizza will be delivered at "+location+" in "+houseno+".");
+            alert("Your pizza will be delivered at "+building+" in house number "+office+" .");
         } else {
-            alert("please enter your delivery point")
-        }
+            alert("please enter your location");
+        };
     });
 })
-
-
-/* $(document).ready(function(){
-    $('form').submit(function(){
-        var name = $('input#name').val();
-        var email = $('input#email').val();
-        var text = $('textarea#textarea').val();
-        if ($('input#name').val() && $('input#email').val() && $('textarea#textarea').val() !== ""){
-            alert(name+", we have recieved your email. Thank you for responding to us.");
-        } else {
-            alert("Please enter your name and email.");
-        }
-    });
-});
- 
-if ($('input#name').val() && $('input#email').val() && $('textarea#textarea').val() !== ""){
-            alert(name+", we have recieved your email. Thank you for responding to us.");
-        } else {
-            alert("Please enter your name and email.");
-        }*/
