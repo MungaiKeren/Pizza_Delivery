@@ -1,4 +1,4 @@
-var size, crust, toppings, total;
+var size, crust, toppings, price, total;
 function Pizza(size, crust, toppings, total) {
     this.size = size;
     this.crust = crust;
@@ -10,18 +10,68 @@ function Pizza(size, crust, toppings, total) {
 //also displays the delivery option
 $(document).ready(function(){
     $('button#order').click(function(){
-        var pizzaSize1 = $('#large option:selected').val();
+        var pizzaSize = $('.size option:selected').val();
+        var pizzaCrust = $('.crust option:selected').val();
+        var pizzaTopping = $('.topping option:selected').val();
 
-        alert("Your total order is:")
+        switch (pizzaSize){
+            case "large":
+                price = 1000;
+                console.log(price);
+            break;
+            case "medium":
+                price = 800;
+                console.log(price);
+            case "small":
+                price = 600;
+                console.log(price);
+            default:
+                console.log("");    
+        }
+        switch (pizzaCrust){
+            case "crispy":
+                crustPrice = 100;
+                console.log(price);
+            case "stuffed":
+                crustPrice = 200;
+                console.log(price);
+            case "glutten free":
+                crustPrice = 300;
+                console.log(price);
+            default:
+                console.log("");
+        }
+        switch (pizzaTopping){
+            case "pepperoni":
+                tPrice = 100;
+            case "onions":
+                tPrice = 50;
+            case "sausage":
+                tPrice = 100;
+            case "bacon":
+                tPrice = 150;
+            case "cheese":
+                tPrice = 100;
+            case "bell pepper":
+                tPrice = 50;
+            case "mushrooms":
+                tPrice = 100;
+            case "Olive":
+                tPrice = 100;
+            default:
+                console.log("");
+        }
+        pizzaTotal =price + crustPrice + tPrice;
+        alert("Your total order is: "+total)
         $('.delivery').show();
     });
 });
 //displays total for order added
-$(document).ready(function(){
-    $('button#final').click(function(){
-        alert("you have "+"_ "+"orders.");
-    });
-});
+// $(document).ready(function(){
+//     $('button#final').click(function(){
+//         alert("you have "+"_ "+"orders.");
+//     });
+// });
 //displays form for delivery
 $(document).ready(function(){
     $('button#deliver').click(function(){

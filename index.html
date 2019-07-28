@@ -64,17 +64,17 @@
         <div class="row">
             <div class="col-md-4">
         <h4>Select your pizza of choice!</h4>
-        <form id="form">
-            <select name="size" class="form-control">
-                <option value="1000" id="large">Large</option>
-                <option value="800" id="medium">Medium</option>
-                <option value="500" id="small">Small</option>
+        <form id="form" class="size">
+            <select class="form-control">
+                <option value="1000" name="size" id="large">Large  (1000)</option>
+                <option value="800" name="size" id="medium">Medium  (800)</option>
+                <option value="500" name="size" id="small">Small  (600)</option>
             </select>
         </form>
     </div>
     <div class="col-md-4">
         <h4>Select your pizza crust!</h4>
-        <form id="form">
+        <form id="form" class="crust">
             <select name="Crust" class="form-control">
                 <option value="100">Crispy</option>
                 <option value="200">Stuffed</option>
@@ -85,7 +85,7 @@
     
     <div class="col-md-4">
         <h4>Select your Toppings of choice!</h4>
-        <form id="form">
+        <form id="form" class="topping">
             <div class="row">
                 <div class="col-md-6">
             <input type="checkbox" class="form control" value="100">Pepperoni<br>
