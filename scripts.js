@@ -12,57 +12,10 @@ $(document).ready(function(){
     $('button#order').click(function(){
         var pizzaSize = $('.size option:selected').val();
         var pizzaCrust = $('.crust option:selected').val();
-        var pizzaTopping = $('.topping option:selected').val();
+        // var pizzaTopping = $('.topping option:checked').val();
 
-        switch (pizzaSize){
-            case "large":
-                price = 1000;
-                console.log(price);
-            break;
-            case "medium":
-                price = 800;
-                console.log(price);
-            case "small":
-                price = 600;
-                console.log(price);
-            default:
-                console.log("");    
-        }
-        switch (pizzaCrust){
-            case "crispy":
-                crustPrice = 100;
-                console.log(price);
-            case "stuffed":
-                crustPrice = 200;
-                console.log(price);
-            case "glutten free":
-                crustPrice = 300;
-                console.log(price);
-            default:
-                console.log("");
-        }
-        switch (pizzaTopping){
-            case "pepperoni":
-                tPrice = 100;
-            case "onions":
-                tPrice = 50;
-            case "sausage":
-                tPrice = 100;
-            case "bacon":
-                tPrice = 150;
-            case "cheese":
-                tPrice = 100;
-            case "bell pepper":
-                tPrice = 50;
-            case "mushrooms":
-                tPrice = 100;
-            case "Olive":
-                tPrice = 100;
-            default:
-                console.log("");
-        }
-        pizzaTotal =price + crustPrice + tPrice;
-        alert("Your total order is: "+total)
+        var pizzaTotal = parseInt(pizzaSize) + parseInt(pizzaCrust);
+        alert("Your total order is: "+pizzaTotal)
         $('.delivery').show();
     });
 });
