@@ -66,9 +66,9 @@
         <h4>Select your pizza of choice!</h4>
         <form id="form" class="size">
             <select class="form-control">
-                <option value="1000" name="size" id="large">Large  (1000)</option>
-                <option value="800" name="size" id="medium">Medium  (800)</option>
-                <option value="500" name="size" id="small">Small  (600)</option>
+                <option label="Large" value="1000">Large  (1000)</option>
+                <option label="Medium" value="800">Medium  (800)</option>
+                <option label="Small" value="500">Small  (600)</option>
             </select>
         </form>
     </div>
@@ -76,9 +76,9 @@
         <h4>Select your pizza crust!</h4>
         <form id="form" class="crust">
             <select name="Crust" class="form-control">
-                <option value="100">Crispy</option>
-                <option value="200">Stuffed</option>
-                <option value="300">Glutten free</option>
+                <option label="Crispy" value="100">Crispy</option>
+                <option label="Stuffed" value="200">Stuffed</option>
+                <option label="Glutten-free" value="300">Glutten-free</option>
             </select>
         </div>
         </form>
@@ -88,16 +88,16 @@
         <form id="form" class="topping">
             <div class="row">
                 <div class="col-md-6">
-            <input type="checkbox" class="form control" value="100">Pepperoni<br>
-            <input type="checkbox" class="form control">Onions<br>
-            <input type="checkbox" class="form control">sausage<br>
-            <input type="checkbox" class="form control">Bacon<br>
+            <input type="checkbox" class="form control" label="Pepperoni" value="100">Pepperoni<br>
+            <input type="checkbox" class="form control" label="Onions" value="150">Onions<br>
+            <input type="checkbox" class="form control" label="Sausage" value="100">Sausage<br>
+            <input type="checkbox" class="form control" label="Bacon" value="100">Bacon<br>
         </div>
             <div class="col-md-6">
-            <input type="checkbox" class="form control">Cheese<br>
-            <input type="checkbox" class="form control">Bell Pepper<br>
-            <input type="checkbox" class="form control">Mushrooms<br>
-            <input type="checkbox" class="form control">Olive<br>
+            <input type="checkbox" class="form control" label="Cheese" value="150">Cheese<br>
+            <input type="checkbox" class="form control" label="Bell-Pepper" value="150">Bell-Pepper<br>
+            <input type="checkbox" class="form control" label="Mushrooms" value="100">Mushrooms<br>
+            <input type="checkbox" class="form control" label="Olive" value="150">Olive<br>
         </div>
     </div>
     <button type="submit" class="btn btn-secondary" id="order">Order</button>
