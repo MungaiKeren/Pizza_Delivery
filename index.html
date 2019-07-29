@@ -66,7 +66,7 @@
         <h4>Select your pizza of choice!</h4>
         <form id="form" class="size">
             <select class="form-control">
-                <option label="Large" value="1000">Large(1000)</option>
+                <option label="Large" value="1000">Large 1000</option>
                 <option label="Medium" value="800">Medium(800)</option>
                 <option label="Small" value="600">Small(600)</option>
             </select>
@@ -88,21 +88,21 @@
         <form id="form" class="topping">
             <div class="row">
                 <div class="col-md-6">
-            <input type="checkbox" class="form control" label="Pepperoni" value="100">Pepperoni<br>
-            <input type="checkbox" class="form control" label="Onions" value="150">Onions<br>
-            <input type="checkbox" class="form control" label="Sausage" value="100">Sausage<br>
-            <input type="checkbox" class="form control" label="Bacon" value="100">Bacon<br>
+            <input type="checkbox" name="toppings" class="form control" label="Pepperoni" value="100">Pepperoni<br>
+            <input type="checkbox" name="toppings" class="form control" label="Onions" value="100">Onions<br>
+            <input type="checkbox" name="toppings" class="form control" label="Sausage" value="100">Sausage<br>
+            <input type="checkbox" name="toppings" class="form control" label="Bacon" value="100">Bacon<br>
         </div>
             <div class="col-md-6">
-            <input type="checkbox" class="form control" label="Cheese" value="150">Cheese<br>
-            <input type="checkbox" class="form control" label="Bell-Pepper" value="150">Bell-Pepper<br>
-            <input type="checkbox" class="form control" label="Mushrooms" value="100">Mushrooms<br>
-            <input type="checkbox" class="form control" label="Olive" value="150">Olive<br>
+            <input type="checkbox" name="toppings" class="form control" label="Cheese" value="100">Cheese<br>
+            <input type="checkbox" name="toppings" class="form control" label="Bell-Pepper" value="100">Bell-Pepper<br>
+            <input type="checkbox" name="toppings" class="form control" label="Mushrooms" value="100">Mushrooms<br>
+            <input type="checkbox" name="toppings" class="form control" label="Olive" value="100">Olive<br>
         </div>
     </div>
     <button type="submit" class="btn btn-secondary" id="order">Order</button>
         </form><br>
-        <button class="btn btn-secondary" id="Order2">Another Pizza?</button>
+        <button class="btn btn-secondary" id="order2">Another Pizza?</button>
     </div>
     </div>
     </div>
@@ -121,6 +121,10 @@
         </form>
     </div><br>
     <button class="btn btn-info" id="final">Checkout</button>
+    <p id="fnl">Your total final is:</p>
+    <ul id="checkout">
+
+    </ul>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">

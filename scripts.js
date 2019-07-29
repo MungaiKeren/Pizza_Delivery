@@ -12,19 +12,36 @@ $(document).ready(function(){
     $('button#order').click(function(){
         var pizzaSize = $('.size option:selected').val();
         var pizzaCrust = $('.crust option:selected').val();
-        // var pizzaTopping = $('.topping option:checked').val();
 
-        var pizzaTotal = parseInt(pizzaSize) + parseInt(pizzaCrust);
+        var pTopping = [];
+        
+        $.each($("input[name='toppings']:checked"), function(){
+            pTopping.push($(this).val());
+        });
+        var pizzaTopping = pTopping.length*100;
+        var pizzaTotal = parseInt(pizzaSize) + parseInt(pizzaCrust)+ parseInt(pizzaTopping);
         alert("Your total order is: "+pizzaTotal)
         $('.delivery').show();
     });
 });
 //displays total for order added
-// $(document).ready(function(){
-//     $('button#final').click(function(){
-//         alert("you have "+"_ "+"orders.");
-//     });
-// });
+$(document).ready(function(){
+    $('button#order2').click(function(){
+        var pizzaSize = $('.size option:selected').val();
+        var pizzaCrust = $('.crust option:selected').val();
+        // var pizzaTopping = $('.topping option:checked').val();
+       
+        var pizzaTotal = parseInt(pizzaSize) + parseInt(pizzaCrust);
+        order = order + 1;
+        grandTotal = grandTotal + total;
+
+        var pizza2 = new pizza (size, crust, toppings, total);
+
+
+
+        alert("you have "+"_ "+"orders.");
+    });
+});
 //displays form for delivery
 $(document).ready(function(){
     $('button#deliver').click(function(){
@@ -43,3 +60,11 @@ $(document).ready(function(){
         };
     });
 })
+//checkout
+$(document).ready(function(){
+    $('button#final').click(function(){
+        $('p#fnl').show();
+
+        $('ul#checkout').append('<li></li>')
+    })
+});

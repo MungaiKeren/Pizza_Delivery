@@ -45,3 +45,11 @@ form#place{
 #final{
     margin-left: 20%;
 }
+p#fnl{
+    display: none;
+    margin-left: 20%;
+}
+ul#checkout{
+    display: none;
+    margin-left: 20%;
+}
