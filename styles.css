@@ -28,6 +28,9 @@ li{
 button#order{
     text-align: center;
 }
+button#order2{
+    margin-left: 16%;
+}
 .delivery{
     text-align: center;
     display: none;
