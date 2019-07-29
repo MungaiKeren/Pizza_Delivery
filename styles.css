@@ -2,7 +2,7 @@ body{
     scroll-behavior: smooth;
 }
 .landing-page{
-    background: url('../Pizza-delivery/Images/pizza\ LP3.jpg');
+    background: url('https://github.com/MungaiKeren/Pizza_Delivery/blob/master/Images/pizza%20LP3.jpg?raw=true');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
