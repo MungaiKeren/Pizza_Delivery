@@ -88,7 +88,7 @@ $(document).ready(function(){
     var pizzaTotal2 = parseInt(pizzaSize2) + parseInt(pizzaCrust2)+ parseInt(pizzaTopping2);
     
     alert("Your total order is: "+pizzaTotal2)//displays grandtotal for order added
-    var grandTotal = pizzaTotal + pizzaTotal2;
+    
     });
     event.preventDefault();
 });
@@ -118,7 +118,8 @@ $(document).ready(function(){
 //checkout
 $(document).ready(function(){
     $('button#final').click(function(){
+        var newPizza = new Pizza    
         $('p#fnl').show();
-        $('ul#checkout').append(grandTotal);
-    })
+        $('#checkout').append('<p>'+200+'</p>');
+    });
 });
