@@ -2,7 +2,7 @@ body{
     scroll-behavior: smooth;
 }
 .landing-page{
-    background-image: url('../Pizza-delivery/Images/pizza\ LP3.jpg');
+    background: url('../Pizza-delivery/Images/pizza\ LP3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 

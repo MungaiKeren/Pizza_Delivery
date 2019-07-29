@@ -32,47 +32,67 @@ $(document).ready(function(){
          $('#placeOrder2').append('<div class="row">'+
         '<div class="col-md-4">'+
     '<h4>Select your pizza of choice!</h4>'+
-    '<form id="form" class="size">'+
+    '<form id="form" class="size2">'+
         '<select class="form-control">'+
-            '<option label="Large" value="1000">Large 1000</option>'+
-            '<option label="Medium" value="800">Medium(800)</option>'+
-            '<option label="Small" value="600">Small(600)</option>'+
+            '<option label="Large  -  100" value="1000"></option>'+
+            '<option label="Medium  -  800" value="800"></option>'+
+            '<option label="Small  -  600" value="600"></option>'+
         '</select>'+
     '</form>'+
 '</div>'+
 '<div class="col-md-4">'+
     '<h4>Select your pizza crust!</h4>'+
-    '<form id="form" class="crust">'+
+    '<form id="form" class="crust2">'+
         '<select name="Crust" class="form-control">'+
-            '<option label="Crispy" value="100">Crispy</option>'+
-            '<option label="Stuffed" value="200">Stuffed</option>'+
-            '<option label="Glutten-free" value="300">Glutten-free</option>'+
+            '<option label="Crispy  -  100" value="100"></option>'+
+            '<option label="Stuffed  -  200" value="200"></option>'+
+            '<option label="Glutten-free  -  300" value="300"></option>'+
         '</select>'+
     '</div>'+
     '</form>'+
 
 '<div class="col-md-4">'+
     '<h4>Select your Toppings of choice!</h4>'+
-    '<form id="form" class="topping">'+
+    '<form id="form" class="topping2">'+
         '<div class="row">'+
             '<div class="col-md-6">'+
-        '<input type="checkbox" name="toppings" class="form control" label="Pepperoni" value="100">Pepperoni<br>'+
-        '<input type="checkbox" name="toppings" class="form control" label="Onions" value="100">Onions<br>'+
-        '<input type="checkbox" name="toppings" class="form control" label="Sausage" value="100">Sausage<br>'+
-        '<input type="checkbox" name="toppings" class="form control" label="Bacon" value="100">Bacon<br>'+
+        '<input type="checkbox" name="toppings2" class="form control" label="Pepperoni" value="100">Pepperoni<br>'+
+        '<input type="checkbox" name="toppings2" class="form control" label="Onions" value="100">Onions<br>'+
+        '<input type="checkbox" name="toppings2" class="form control" label="Sausage" value="100">Sausage<br>'+
+        '<input type="checkbox" name="toppings2" class="form control" label="Bacon" value="100">Bacon<br>'+
     '</div>'+
         '<div class="col-md-6">'+
-        '<input type="checkbox" name="toppings" class="form control" label="Cheese" value="100">Cheese<br>'+
-        '<input type="checkbox" name="toppings" class="form control" label="Bell-Pepper" value="100">Bell-Pepper<br>'+
-        '<input type="checkbox" name="toppings" class="form control" label="Mushrooms" value="100">Mushrooms<br>'+
-        '<input type="checkbox" name="toppings" class="form control" label="Olive" value="100">Olive<br>'+
+        '<input type="checkbox" name="toppings2" class="form control" label="Cheese" value="100">Cheese<br>'+
+        '<input type="checkbox" name="toppings2" class="form control" label="Bell-Pepper" value="100">Bell-Pepper<br>'+
+        '<input type="checkbox" name="toppings2" class="form control" label="Mushrooms" value="100">Mushrooms<br>'+
+        '<input type="checkbox" name="toppings2" class="form control" label="Olive" value="100">Olive<br>'+
     '</div>'+
 '</div>'+
 
     '</form>'+'<br>'+
     
 '</div>'+
-'</div>');    
+'</div>');   
+$(document).ready(function(){
+    $('#secondOrder').click(function(){
+        var pizzaSize2 = $('.size2 option:selected').val();
+        var pizzaCrust2 = $('.crust2 option:selected').val();
+
+        var pTopping2 = [];
+
+    $.each($("input[name='toppings2']:checked"), function(){
+    pTopping2.push($(this).val());
+    });
+
+    var pizzaTopping2 = pTopping2.length*100;
+    var pizzaTotal2 = parseInt(pizzaSize2) + parseInt(pizzaCrust2)+ parseInt(pizzaTopping2);
+    
+    alert("Your total order is: "+pizzaTotal2)//displays grandtotal for order added
+    var grandTotal = pizzaTotal + pizzaTotal2;
+    });
+    event.preventDefault();
+});
+
 });
 });
 
@@ -99,6 +119,6 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('button#final').click(function(){
         $('p#fnl').show();
-        $('ul#checkout').append('<li></li>')
+        $('ul#checkout').append(grandTotal);
     })
 });
