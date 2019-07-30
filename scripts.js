@@ -44,7 +44,7 @@ $(document).ready(function(){
     '<h4>Select your pizza crust!</h4>'+
     '<form id="form" class="crust2">'+
         '<select name="Crust" class="form-control">'+
-            '<option label="Crispy  -  100" value="100"></option>'+
+            '<option label="Crispy  -  1000" value="100"></option>'+
             '<option label="Stuffed  -  200" value="200"></option>'+
             '<option label="Glutten-free  -  300" value="300"></option>'+
         '</select>'+
@@ -118,8 +118,13 @@ $(document).ready(function(){
 //checkout
 $(document).ready(function(){
     $('button#final').click(function(){
-        var newPizza = new Pizza    
         $('p#fnl').show();
-        $('#checkout').append('<p>'+200+'</p>');
+        
+        var newPizza = function(pizzaTotal, pizzaTotal2){
+            return pizzaTotal + pizzaTotal2;
+        }
+             
+        
+        $('#checkout').append('<p>'+newPizza+200+'</p>');
     });
 });
