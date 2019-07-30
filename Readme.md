@@ -27,6 +27,12 @@ Mungaikeren.github.io/Pizza_Delivery
 * Javascript
 * JQuery
 ## BDD
+|User Input             |Output               |App behaviour|
+|:---------             |:-----:              |-----------:|
+|Place order            |Order value          |Alerts order price|
+|Enter delivery location|Includes location    |Alerts pizza will be delivered|
+|Place Quantity         |Alerts Quantity price|Sums up price|
+|Proceed to checkout    |Prints total price   |lists all items ordered|
 ## Support and contact details
 Email me at wambukeren@gmail.com
 ### License
